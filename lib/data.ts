@@ -85,6 +85,7 @@ export interface Project {
   features: string[];
   accent: string;
   gradient: string;
+  link?: string;
 }
 
 export const projects: Project[] = [
@@ -133,6 +134,7 @@ export const projects: Project[] = [
     ],
     accent: "#4C6FFF",
     gradient: "linear-gradient(135deg, #EAF0FF 0%, #F1ECFF 100%)",
+    link: "https://www.figma.com/design/2dc4IJoONgp3PJcRnl37G0/Untitled?node-id=0-1&p=f",
   },
   {
     slug: "matrimonial-dashboard",
@@ -157,6 +159,7 @@ export const projects: Project[] = [
     ],
     accent: "#FF7A59",
     gradient: "linear-gradient(135deg, #FFF1EC 0%, #EFEBFF 100%)",
+    link: "https://www.figma.com/design/2dc4IJoONgp3PJcRnl37G0/Untitled?node-id=0-1&p=f",
   },
   {
     slug: "bitedash",

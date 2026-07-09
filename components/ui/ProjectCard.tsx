@@ -11,6 +11,15 @@ import { Project } from "@/lib/data";
 export default function ProjectCard({ project, delay = 0 }: { project: Project; delay?: number }) {
   const [open, setOpen] = useState(false);
 
+  const handlePrimaryAction = () => {
+    if (project.link) {
+      window.open(project.link, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    setOpen((v) => !v);
+  };
+
   return (
     <Reveal delay={delay}>
       <div className="group rounded-4xl border border-line bg-surface overflow-hidden transition-shadow duration-400 hover:shadow-card-hover">
@@ -45,15 +54,17 @@ export default function ProjectCard({ project, delay = 0 }: { project: Project; 
             </div>
 
             <button
-              onClick={() => setOpen((v) => !v)}
+              onClick={handlePrimaryAction}
               aria-expanded={open}
               className="mt-7 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-ink hover:text-violet transition-colors duration-200"
             >
-              {open ? "Hide case study" : "View case study"}
-              <ChevronDown
-                size={16}
-                className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-              />
+              {project.link ? "Open in Figma" : open ? "Hide case study" : "View case study"}
+              {!project.link && (
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+                />
+              )}
             </button>
           </div>
         </div>
