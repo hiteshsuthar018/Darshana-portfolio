@@ -111,6 +111,7 @@ export const projects: Project[] = [
     ],
     accent: "#7C5CFC",
     gradient: "linear-gradient(135deg, #EFEBFF 0%, #E4F4EA 100%)",
+    link: "https://www.figma.com/design/2dc4IJoONgp3PJcRnl37G0/Untitled?node-id=43-30&t=eyuvaM10c0qmCbvX-1",
   },
   {
     slug: "matrimonial-app",
@@ -184,6 +185,7 @@ export const projects: Project[] = [
     ],
     accent: "#7C5CFC",
     gradient: "linear-gradient(135deg, #F1ECFF 0%, #EAF0FF 100%)",
+    link: "https://www.figma.com/design/2dc4IJoONgp3PJcRnl37G0/Untitled?node-id=43-30&t=eyuvaM10c0qmCbvX-1",
   },
 ];
 
