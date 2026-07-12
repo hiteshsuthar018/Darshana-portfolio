@@ -5,6 +5,7 @@ export const profile = {
   shortBio:
     "Creative and detail-oriented UI/UX Designer with hands-on experience designing responsive web and mobile applications. Passionate about creating user-centered digital products through research, wireframing, prototyping, and modern interface design using Figma.",
   email: "darshanasoni76@gmail.com",
+  phone: "+91 89894 11610",
   linkedin: "https://linkedin.com/in/darshana-soni-24757b279",
   github: "https://github.com/Darshanasoni23",
 };

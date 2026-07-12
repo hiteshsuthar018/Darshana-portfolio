@@ -5,6 +5,7 @@ import { profile } from "@/lib/data";
 
 const links = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
+  { label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s+/g, "")}`, icon: Mail },
   { label: "LinkedIn", value: "darshana-soni", href: profile.linkedin, icon: Linkedin },
   { label: "GitHub", value: "Darshanasoni23", href: profile.github, icon: Github },
 ];
